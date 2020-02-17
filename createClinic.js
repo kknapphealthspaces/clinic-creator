@@ -30,7 +30,7 @@ rl.question("lobbyBTitle ?", function (lobbyBTitle) {
 function getTemplateClinic(practiceName, clinicName, clinicProperName, uuid, adlLate, adlEarly, oucProvider, logoImgPath, timezone, lobbyATitle, lobbyBTitle) {
    return ({
       // point this to practices/healthspaces/clinics when ready to test for PatientFlow
-      [`practices/healthspaces/clinicsjsontest`]: {
+      [`practices/${practiceName}/clinics`]: {
          [`${clinicName}`]: {
             "workflow": {
                "transitions": [
